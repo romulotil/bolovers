@@ -30,13 +30,11 @@ export class App {
 		let router = express.Router();
 		// placeholder route handler
 		router.get('/', (req, res, next) => {
-			res.json({
-				message: 'Hello World!'
-			});
+			res.render('index')
 		});
 		router.get('/hello', (req, res, next) => {
 			res.json({
-				message: 'Hello World!'
+				message: 'Hello World mesmo!'
 			});
 		});
 		this.express.use('/', router);
