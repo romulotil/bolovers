@@ -3,7 +3,7 @@ import * as express from 'express';
 import * as logger from 'morgan';
 import * as bodyParser from 'body-parser';
 
-export class App {
+export class Api {
     public express: express.Application;
 
     constructor() {

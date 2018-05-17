@@ -1,8 +1,4 @@
 import * as functions from 'firebase-functions';
-import { App } from './api/app';
+import { Api } from './api/api';
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-
-export const app = functions.https.onRequest(new App().express);
+export const api = functions.https.onRequest(new Api().express);
